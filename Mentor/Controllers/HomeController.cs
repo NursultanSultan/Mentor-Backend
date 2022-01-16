@@ -18,8 +18,11 @@ namespace Mentor.Controllers
 
         public IActionResult Index()
         {
-            
-            return View();
+            HomeViewModel homeVM = new HomeViewModel
+            {
+                Courses = _context.Courses.Where(c => c.IsDeleted == false).ToList()
+            };
+            return View(homeVM);
         }
     }
 }

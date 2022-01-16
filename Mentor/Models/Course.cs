@@ -25,5 +25,7 @@ namespace Mentor.Models
 
         public string TrainerPhoto { get; set; }
 
+        public bool IsDeleted { get; set; }
+
     }
 }

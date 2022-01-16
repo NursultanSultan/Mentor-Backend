@@ -28,13 +28,20 @@ using Mentor.Models;
 #nullable disable
 #nullable restore
 #line 3 "C:\Users\Home\Desktop\ExaminationPractise\Backend\Mentor\Mentor\Mentor\Views\_ViewImports.cshtml"
+using Mentor.ViewModel;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\Home\Desktop\ExaminationPractise\Backend\Mentor\Mentor\Mentor\Views\_ViewImports.cshtml"
 using Mentor.Services;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0a2e7082f2b6e102aa275d6d4d8b34076523227a", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2166aa91e29ddffa40d3b5c2937fafd6a8df2618", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998
