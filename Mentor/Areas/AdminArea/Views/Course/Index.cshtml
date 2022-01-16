@@ -1,0 +1,59 @@
+﻿@model List<CourseReadVM>
+@{
+    ViewData["Title"] = "Index";
+    int count = 1;
+}
+
+<div class="col-lg-12 p-5 mt-3 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <a asp-controller="Course" asp-action="Create" class="btn btn-inverse-success btn-fw d-flex justify-content-center">Create</a>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th class="text-center">Settings</th>
+                            <th class="text-center">Image</th>
+                            <th class="text-center">Course Name</th>
+                            <th class="text-center">Detail</th>
+                            <th class="text-center">Content</th>
+                            <th class="text-center">Price</th>
+                            <th class="text-center">Trainer Name</th>
+                            <th class="text-center">Trainer Photo</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@count</td>
+                                <td>
+                                    <a asp-controller="Course" asp-action="Update" asp-route-id="@item.Id" class="btn btn-outline-primary btn-fw">Update</a>
+                                    <a asp-controller="Course" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger btn-fw">Delete</a>
+                                </td>
+                                <td>
+                                    <img style="width:250px; height:250px; border-radius:0;" src="~/assets/image/@item.CourseImageUrl" alt="Alternate Text" />
+                                </td>
+                                <td class="text-center">@item.CourseName</td>
+                                <td class="text-center">@item.CourseDetail</td>
+                                <td class="text-center">@item.CourseContent</td>
+                                <td class="text-center">@item.Price</td>
+                                <td class="text-center">@item.TrainerName</td>
+                                <td>
+                                    <img style="width:100px; height:100px;" src="~/assets/image/@item.TrainerPhotoUrl" alt="Alternate Text" />
+                                </td>
+
+
+
+                             </tr>
+                            count++;
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+

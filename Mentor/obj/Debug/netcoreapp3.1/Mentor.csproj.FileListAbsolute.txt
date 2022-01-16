@@ -145,3 +145,8 @@ C:\Users\Home\Desktop\ExaminationPractise\Backend\Mentor\Mentor\Mentor\bin\Debug
 C:\Users\Home\Desktop\ExaminationPractise\Backend\Mentor\Mentor\Mentor\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Home\Desktop\ExaminationPractise\Backend\Mentor\Mentor\Mentor\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Home\Desktop\ExaminationPractise\Backend\Mentor\Mentor\Mentor\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Home\Desktop\ExaminationPractise\Backend\Mentor\Mentor\Mentor\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\Home\Desktop\ExaminationPractise\Backend\Mentor\Mentor\Mentor\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\_ViewImports.cshtml.g.cs
+C:\Users\Home\Desktop\ExaminationPractise\Backend\Mentor\Mentor\Mentor\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\_ViewStart.cshtml.g.cs
+C:\Users\Home\Desktop\ExaminationPractise\Backend\Mentor\Mentor\Mentor\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Dashboard\Index.cshtml.g.cs
+C:\Users\Home\Desktop\ExaminationPractise\Backend\Mentor\Mentor\Mentor\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Course\Index.cshtml.g.cs

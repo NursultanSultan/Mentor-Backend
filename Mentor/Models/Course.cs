@@ -5,6 +5,7 @@ namespace Mentor.Models
     public class Course
     {
         public int Id { get; set; }
+
         [Required ,MaxLength(50)]
         public string CourseName { get; set; }
 
