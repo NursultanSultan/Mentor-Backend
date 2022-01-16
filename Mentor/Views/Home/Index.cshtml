@@ -1,0 +1,290 @@
+﻿@inject HomeService service
+@{
+    ViewData["Title"] = "Index";
+    Dictionary<string, string> settings = service.GetSetting();
+}
+
+<!-- Main statr -->
+<main>
+
+    <!-- Hero start -->
+    <section id="hero">
+        <img class="hero-background-img" src="~/assets/image/@settings["hero-background-img"]" alt="photo">
+        <div class="container-fluid">
+            <div class="hero-items">
+                <h1>
+                    @Html.Raw(settings["hero-title"])
+                </h1>
+                <h2>
+                    @settings["hero-SubTitle"]
+                </h2>
+                <a href="#" class="hero-started-btn">
+                    @settings["hero-started-btn"]
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Hero end -->
+    <!-- About start -->
+    <section id="about">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="about-text-items">
+                        <h2>
+                            Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.
+                        </h2>
+                        <p class="about-content italic-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <ul class="about-check-lists">
+                            <li class="about-content">
+                                <i class="far fa-check-circle"></i>
+                                Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </li>
+                            <li class="about-content">
+                                <i class="far fa-check-circle"></i>
+                                voluptate trideta storacalaperda mastiro
+                            </li>
+                            <li class="about-content">
+                                <i class="far fa-check-circle"></i>
+                                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.
+                            </li>
+                        </ul>
+                        <p class="about-content">
+                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <img class="about-image" src="~/assets/image/about.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About end -->
+    <!-- why us start -->
+
+    <section id="why_us">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+
+                    <div class="why-us-content">
+                        <h2>
+                            Why Choose Mentor?
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit Asperiores dolores sed et.
+                            Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+                        </p>
+                        <div class="more-btn">
+                            <a href="#" class="more-link">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="boxes">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 d-flex flex-colomn">
+                                <div class="card-items">
+                                    <i class="fas fa-file-invoice"></i>
+                                    <h3>
+                                        Corporis voluptates sit
+                                    </h3>
+                                    <p>
+                                        Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 d-flex flex-colomn">
+                                <div class="card-items">
+                                    <i class="far fa-square"></i>
+                                    <h3>
+                                        Ullamco laboris ladore pan
+                                    </h3>
+                                    <p>
+                                        Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 d-flex flex-colomn">
+                                <div class="card-items">
+                                    <i class="far fa-images"></i>
+                                    <h3>
+                                        Labore consequatur
+                                    </h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Expedita, soluta officiis et libero distinctio dolores?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- why us end -->
+    <!-- Features start -->
+
+    <section id="feature">
+        <div class="container-fluid">
+            <div class="row">
+                <div style="color:#ffbb2c;" class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                    <div class="feature-items">
+                        <i class="fas fa-store"></i>
+                        <h5>Lorem Impsum</h5>
+                    </div>
+                </div>
+
+                <div style="color: #5578ff;" class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                    <div class="feature-items">
+                        <i class="fas fa-store"></i>
+                        <h5>Lorem Impsum</h5>
+                    </div>
+                </div>
+
+                <div style="color: #e80368;" class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                    <div class="feature-items">
+                        <i class="far fa-calendar-alt"></i>
+                        <h5>Lorem Impsum</h5>
+                    </div>
+                </div>
+                <div style="color: #e361ff;" class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                    <div class="feature-items">
+                        <i class="fas fa-paint-roller"></i>
+                        <h5>Lorem Impsum</h5>
+                    </div>
+                </div>
+
+                <div style="color: #5578ff;" class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                    <div class="feature-items">
+                        <i class="fas fa-store"></i>
+                        <h5>Lorem Impsum</h5>
+                    </div>
+                </div>
+                <div style="color: #e361ff;" class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                    <div class="feature-items">
+                        <i class="fas fa-paint-roller"></i>
+                        <h5>Lorem Impsum</h5>
+                    </div>
+                </div>
+                <div style="color:#ffbb2c;" class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                    <div class="feature-items">
+                        <i class="fas fa-store"></i>
+                        <h5>Lorem Impsum</h5>
+                    </div>
+                </div>
+                <div style="color: #e80368;" class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                    <div class="feature-items">
+                        <i class="far fa-calendar-alt"></i>
+                        <h5>Lorem Impsum</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- feature end -->
+    <!-- ======= Popular Courses Section ======= -->
+    <section id="popular-courses" class="courses">
+        <div class="container-fluid" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Courses</h2>
+                <p>Popular Courses</p>
+            </div>
+
+            <div class="row" data-aos="zoom-in" data-aos-delay="100">
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="course-item">
+                        <img src="~/assets/image/course-1.jpg" class="img-fluid" alt="...">
+                        <div class="course-content">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4>Web Development</h4>
+                                <p class="price">$169</p>
+                            </div>
+
+                            <h3><a href="course-details.html">Website Design</a></h3>
+                            <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                            <div class="trainer d-flex justify-content-between align-items-center">
+                                <div class="trainer-profile d-flex align-items-center">
+                                    <img src="~/assets/image/trainer-1.jpg" class="img-fluid" alt="">
+                                    <span>Antonio</span>
+                                </div>
+                                <div class="trainer-rank d-flex align-items-center">
+                                    <i class="bx bx-user"></i>&nbsp;50
+                                    &nbsp;&nbsp;
+                                    <i class="bx bx-heart"></i>&nbsp;65
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End Course Item-->
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                    <div class="course-item">
+                        <img src="~/assets/image/course-3.jpg" class="img-fluid" alt="...">
+                        <div class="course-content">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4>Marketing</h4>
+                                <p class="price">$250</p>
+                            </div>
+
+                            <h3><a href="course-details.html">Search Engine Optimization</a></h3>
+                            <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                            <div class="trainer d-flex justify-content-between align-items-center">
+                                <div class="trainer-profile d-flex align-items-center">
+                                    <img src="~/assets/image/trainer-3.jpg" class="img-fluid" alt="">
+                                    <span>Lana</span>
+                                </div>
+                                <div class="trainer-rank d-flex align-items-center">
+                                    <i class="bx bx-user"></i>&nbsp;35
+                                    &nbsp;&nbsp;
+                                    <i class="bx bx-heart"></i>&nbsp;42
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End Course Item-->
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                    <div class="course-item">
+                        <img src="~/assets/image/course-2.jpg" class="img-fluid" alt="...">
+                        <div class="course-content">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4>Content</h4>
+                                <p class="price">$180</p>
+                            </div>
+
+                            <h3><a href="course-details.html">Copywriting</a></h3>
+                            <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                            <div class="trainer d-flex justify-content-between align-items-center">
+                                <div class="trainer-profile d-flex align-items-center">
+                                    <img src="~/assets/image/trainer-2.jpg" class="img-fluid" alt="">
+                                    <span>Brandon</span>
+                                </div>
+                                <div class="trainer-rank d-flex align-items-center">
+                                    <i class="bx bx-user"></i>&nbsp;20
+                                    &nbsp;&nbsp;
+                                    <i class="bx bx-heart"></i>&nbsp;85
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End Course Item-->
+
+            </div>
+
+        </div>
+    </section><!-- End Popular Courses Section -->
+
+</main>
+<!-- main end -->
