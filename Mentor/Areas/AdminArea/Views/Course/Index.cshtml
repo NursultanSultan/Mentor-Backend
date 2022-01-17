@@ -30,8 +30,12 @@
                             <tr>
                                 <td>@count</td>
                                 <td>
-                                    <a asp-controller="Course" asp-action="Update" asp-route-id="@item.Id" class="btn btn-outline-primary btn-fw">Update</a>
-                                    <a asp-controller="Course" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger btn-fw">Delete</a>
+                                    <a asp-controller="Course" asp-action="Update" asp-route-id="@item.Id" class="btn btn-outline-primary btn-fw mb-2">Update</a>
+                                    
+                                    <form method="post">
+                                        <button type="submit" asp-controller="Course" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger btn-fw">Delete</button>
+                                    </form>
+
                                 </td>
                                 <td>
                                     <img style="width:250px; height:250px; border-radius:0;" src="~/assets/image/@item.CourseImageUrl" alt="Alternate Text" />

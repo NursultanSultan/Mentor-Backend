@@ -1,0 +1,59 @@
+﻿@model CourseCrudVM
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="col-md-12 pt-5 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            
+            <form class="forms-sample" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label asp-for="CourseName">Course Name</label>
+                    <input asp-for="CourseName" class="form-control">
+                    <span asp-validation-for="CourseName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="CourseDetail">Detail</label>
+                    <input asp-for="CourseDetail" class="form-control">
+                    <span asp-validation-for="CourseDetail" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="CourseContent">Content</label>
+                    <input asp-for="CourseContent" class="form-control">
+                    <span asp-validation-for="CourseContent" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="CoursePhoto">Course Photo</label>
+                    <input accept="image/" asp-for="CoursePhoto" class="form-control">
+                    <span asp-validation-for="CoursePhoto" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Price"></label>
+                    <input asp-for="Price" class="form-control">
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="TrainerName"> Trainer </label>
+                    <input asp-for="TrainerName" class="form-control">
+                    <span asp-validation-for="TrainerName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="TrainerPhoto"> Trainer </label>
+                    <input accept="image/" asp-for="TrainerPhoto" class="form-control">
+                    <span asp-validation-for="TrainerPhoto" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary me-2">Create</button>
+                <a asp-action="Index" class="btn btn-dark">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
+

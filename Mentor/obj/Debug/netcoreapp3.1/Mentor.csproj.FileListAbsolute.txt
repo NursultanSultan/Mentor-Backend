@@ -150,3 +150,4 @@ C:\Users\Home\Desktop\ExaminationPractise\Backend\Mentor\Mentor\Mentor\obj\Debug
 C:\Users\Home\Desktop\ExaminationPractise\Backend\Mentor\Mentor\Mentor\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\_ViewStart.cshtml.g.cs
 C:\Users\Home\Desktop\ExaminationPractise\Backend\Mentor\Mentor\Mentor\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Dashboard\Index.cshtml.g.cs
 C:\Users\Home\Desktop\ExaminationPractise\Backend\Mentor\Mentor\Mentor\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Course\Index.cshtml.g.cs
+C:\Users\Home\Desktop\ExaminationPractise\Backend\Mentor\Mentor\Mentor\obj\Debug\netcoreapp3.1\Razor\Areas\AdminArea\Views\Course\Create.cshtml.g.cs
